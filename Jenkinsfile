@@ -8,9 +8,6 @@ node {
     stage('Scan') {
         echo "See Synk site"
     }
-    stage('Build') {
-        echo "Build"
-    }
     stage('Results') {
         echo "Test Result"
     }
