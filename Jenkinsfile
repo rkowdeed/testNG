@@ -6,7 +6,7 @@ node {
         bat 'mvn clean install' // Dependency Installation stage
     }
     stage('Scan') {
-        snykSecurity organisation: 'prashant.b', projectName: 'testNG', severity: 'medium', snykInstallation: 'Snyk', snykTokenId: '7ce508d2-94b3-4790-b545-089627ab64ff', targetFile: 'package.jar'
+        echo "See Synk site"
     }
     stage('Build') {
         echo "Build"
