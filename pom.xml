@@ -94,7 +94,7 @@
       <resources>
         <resource>
           <!-- Get main artifact -->
-          <directory>target/${build.finalName}.jar</directory>
+          <directory>target/${project.build.finalName}.jar</directory>
           <!-- Don't filter binary files -->
           <filtering>false</filtering>
         </resource>
