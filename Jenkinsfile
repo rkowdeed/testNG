@@ -8,7 +8,7 @@ node {
     stage('Scan') {
         echo "See Synk site"
     }
-    stage('Results') {
-        echo "Test Result"
+    stage('Deploy') {
+        echo "${project.basedir}/target/${project.build.finalName}.jar"
     }
 }
