@@ -22,7 +22,7 @@ pipeline
 			steps
 			{
 			//bat 'cd C:/Users/P7167137/.jenkins/workspace/testNG/target/'
-			bat 'move C:/Users/P7167137/.jenkins/workspace/testNG/target/testng-0.0.1-SNAPSHOT.jar D:/'
+			bat 'copy C:\Users\P7167137\.jenkins\workspace\testNG\target\testng-0.0.1-SNAPSHOT.jar /Y D:'
 			}
     		}
 	}
