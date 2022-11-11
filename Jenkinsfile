@@ -21,8 +21,8 @@ pipeline
 		{
 			steps
 			{
-			//bat 'cd C:/Users/P7167137/.jenkins/workspace/testNG/target/'
-			bat 'copy target/ttestng-0.0.1-SNAPSHOT.jar /Y D:'
+			bat 'cd C:/Users/P7167137/.jenkins/workspace/testNG/target/'
+			bat 'copy testng-0.0.1-SNAPSHOT.jar /Y D:'
 			}
     		}
 	}
