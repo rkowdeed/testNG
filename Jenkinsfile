@@ -28,8 +28,9 @@ pipeline
 			steps
 			{
        			echo "jar creation completed"
+			echo ${JAR_DIR} ${WORKSPACE}
 			}
     		}
 	}
-echo "${PACKAGE_VERSION} ${APP_DEST_FILE} ${JAR_DIR}"
+
 }
