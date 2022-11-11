@@ -21,7 +21,7 @@ pipeline
 		{
 			steps
 			{
-			bat 'cd C:\Users\P7167137\.jenkins\workspace\testNG\target'
+			bat 'cd C:/Users/P7167137/.jenkins/workspace/testNG/target'
 			bat 'move testng-0.0.1-SNAPSHOT.jar D:/'
 			}
     		}
