@@ -5,30 +5,30 @@ pipeline
 		{
 		PACKAGE_VERSION="1.0.0.${BUILD_NUMBER}"
 		JAR_DIR="${WORKSPACE}/testNG/target/testng-0.0.1-SNAPSHOT.jar"
-  		APP_DEST_FILE="${WORKSPACE}/testNG/target/MyProjectPackage.${PACKAGE_VERSION}.zip"
+  		APP_DEST_FILE="${WORKSPACE}/testNG/target/MyProjectPackage.${PACKAGE_VERSION}.tar"
 		}
 	stages
 	{
     		stage('Preparation') 
 		{
-        	steps
-		{
+        		steps
+			{
 			git 'https://github.com/rkowdeed/testNG.git'
-		}
+			}
     		}
     		stage('install')
 		{
-		steps
-		{
+			steps
+			{
         		bat 'mvn clean install' // Dependency Installation stage
-    		}
+    			}
 		}    
     		stage('Deploy') 
 		{
-		steps
-		{
-       			zip dir:env:JAR_DIR, zipFile: env.APP_DEST_FILE, overwrite: true
-		}
+			steps
+			{
+       			tar -cf APP_DEST_FILE JAR_DIR
+			}
     		}
 	}
 }
