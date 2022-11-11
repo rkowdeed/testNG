@@ -9,6 +9,6 @@ node {
         echo "See Synk site"
     }
     stage('Deploy') {
-        echo "${project.basedir}/target/${project.build.finalName}.jar"
+        echo "${PROJECT_TARGET_FILE}"
     }
 }
