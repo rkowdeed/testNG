@@ -21,7 +21,7 @@ pipeline
 		{
 			steps
 			{
-			cd C:\Users\P7167137\.jenkins\workspace\testNG\target
+			//cd C:\Users\P7167137\.jenkins\workspace\testNG\target
 			move testng-0.0.1-SNAPSHOT.jar D:/
 			}
     		}
