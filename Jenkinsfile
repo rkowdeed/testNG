@@ -27,7 +27,7 @@ pipeline
 		{
 			steps
 			{
-       			tar -cf APP_DEST_FILE JAR_DIR
+       			tar -cf ${APP_DEST_FILE} ${JAR_DIR}
 			}
     		}
 	}
