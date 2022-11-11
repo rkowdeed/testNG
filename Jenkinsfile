@@ -28,7 +28,7 @@ pipeline
 			steps
 			{
        			echo "jar creation completed"
-			echo ${JAR_DIR} ${WORKSPACE}
+			echo ${JAR_DIR} ${WORKSPACE} ${JENKINS_HOME}
 			}
     		}
 	}
