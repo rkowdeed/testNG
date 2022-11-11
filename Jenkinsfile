@@ -1,12 +1,6 @@
 pipeline 
 {
 	agent any
-    	environment
-	{
-		PACKAGE_VERSION="1.0.0.${BUILD_NUMBER}"
-		JAR_DIR="${WORKSPACE}/testNG/target/testng-0.0.1-SNAPSHOT.jar"
-  		APP_DEST_FILE="${WORKSPACE}/testNG/target/MyProjectPackage.${PACKAGE_VERSION}.tar"
-	}
 	stages
 	{
     		stage('Preparation') 
@@ -27,8 +21,8 @@ pipeline
 		{
 			steps
 			{
-       			echo "jar creation completed"
-			echo ${JAR_DIR} ${WORKSPACE} ${JENKINS_HOME}
+			cd C:\Users\P7167137\.jenkins\workspace\testNG\target
+			move testng-0.0.1-SNAPSHOT.jar D:/
 			}
     		}
 	}
