@@ -31,5 +31,5 @@ pipeline
 			}
     		}
 	}
-//echo "env.PACKAGE_VERSION env.APP_DEST_FILE env.JAR_DIR
+echo "${PACKAGE_VERSION} ${APP_DEST_FILE} ${JAR_DIR}"
 }
