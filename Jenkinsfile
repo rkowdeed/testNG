@@ -4,8 +4,8 @@ pipeline
     	environment
 		{
 		PACKAGE_VERSION="1.0.0.${BUILD_NUMBER}"
-		JAR_DIR="${WORKSPACE}\testNG\target\testng-0.0.1-SNAPSHOT.jar"
-  		APP_DEST_FILE="${WORKSPACE}\testNG\target\MyProjectPackage.${PACKAGE_VERSION}.zip"
+		JAR_DIR="${WORKSPACE}/testNG/target/testng-0.0.1-SNAPSHOT.jar"
+  		APP_DEST_FILE="${WORKSPACE}/testNG/target/MyProjectPackage.${PACKAGE_VERSION}.zip"
 		}
 	stages
 	{
