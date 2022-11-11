@@ -27,7 +27,7 @@ pipeline
 		{
 			steps
 			{
-       			tar -cf ${APP_DEST_FILE} ${JAR_DIR}
+       			echo env.PACKAGE_VERSION env.APP_DEST_FILE env.JAR_DIR
 			}
     		}
 	}
